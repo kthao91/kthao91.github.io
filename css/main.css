@@ -2,31 +2,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
 body {
     font-family: 'Public Sans', sans-serif;
     background-color: darkblue;
+    display: flex;
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1em;
-}
-
-.box {
-    width: 25%;
-    min-width: 200px;
-    height: 300px;
-    background-color: brown;
-    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;
+    font-weight: bolder;
+    font: ;
 }
 
 #nav {
@@ -43,7 +32,7 @@ h3 {
 #info {
     display: inline-block;
     height: 100%;
-    width: 70%;
+    width: 80%;
     min-width: 500px;
     background-color: white;
 }
@@ -76,6 +65,11 @@ h3 {
     height: 50px;
 }
 
+.section_title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 
 /*Main header*/
 
@@ -98,6 +92,52 @@ h3 {
 .main_size {
     width: 100%;
     height: 90vh;
+}
+
+
+/*projects css*/
+
+.box {
+    position: relative;
+    background-color: brown;
+    border-radius: 5px;
+}
+
+.box_position {
+    margin-left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.box_size {
+    width: 80%;
+    min-width: 300px;
+    height: 350px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.description {
+    position: relative;
+}
+
+.description h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.box_position {
+    margin-left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.box_size {
+    width: 90%;
+    min-width: 300px;
+    height: 350px;
 }
 
 @media (max-width:800px) {
