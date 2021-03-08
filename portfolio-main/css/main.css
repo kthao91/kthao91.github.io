@@ -1,0 +1,231 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: yellow;
+}
+
+
+/*Nav*/
+
+.hamberger {
+    display: none;
+}
+
+#nav {
+    /*width: 20%;*/
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#links {
+    display: fixed;
+}
+
+
+/*Main header*/
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;
+    font-weight: bolder;
+    font: ;
+}
+
+.circleHolder {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circleHolder img {
+    margin-left: -270px;
+    margin-top: -115px;
+    width: auto;
+}
+
+.faded_text {
+    opacity: .7;
+}
+
+.icon_size {
+    width: 50px;
+    height: 50px;
+}
+
+.center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.main_align {
+    display: block;
+    text-align: center;
+}
+
+.main_color {
+    background-color: #e6e6e6;
+}
+
+.main_size {
+    width: 100%;
+    height: 90vh;
+}
+
+#info {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#main {
+    display: inline-block;
+}
+
+
+/*projects css*/
+
+.box {
+    position: relative;
+    background-color: brown;
+    border-radius: 5px;
+}
+
+.box_position {
+    margin-left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.box_size {
+    width: 80%;
+    min-width: 300px;
+    height: 350px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.description {
+    position: relative;
+}
+
+.description h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.box_position {
+    margin-left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.box_size {
+    width: 90%;
+    min-width: 300px;
+    height: 350px;
+}
+
+.section_title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:800px) {
+    body {
+        display: inline;
+    }
+    /*Nav*/
+    #nav {
+        position: relative;
+        background-color: chocolate;
+        width: 100%;
+        height: 50px;
+    }
+    #links {
+        position: absolute;
+        background-color: blue;
+        top: 50px;
+        width: 130px;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s;
+        transition-delay: .5s;
+    }
+    .hamburger_check {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        width: 50px;
+        height: 100%;
+        opacity: 0;
+    }
+    .lines {
+        position: absolute;
+        right: 0;
+        top: 7px;
+        width: 50px;
+    }
+    #nav span {
+        z-index: 0;
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 4px;
+        background-color: black;
+        margin-top: 7px;
+        transition: opacity .25s, transform .5s;
+        border-radius: 2px;
+    }
+    /*humburger animation*/
+    .hamburger_check:checked~#links {
+        visibility: visible;
+        opacity: 1;
+    }
+    .hamburger_check:checked~.lines .line1 {
+        transform: translate(1px, 9px) rotate(45deg);
+    }
+    .hamburger_check:checked~.lines .line2 {
+        transform: translate(2px, -2px) rotate(-45deg);
+    }
+    .hamburger_check:checked~.lines .line3 {
+        opacity: 0;
+    }
+    .hamburger_check:not(:checked)~.lines .line1 {
+        background-color: yellow;
+    }
+}
+
+.mobileNone {
+    display: none;
+}
+
+.main_size {
+    width: 100%;
+    height: 105vh;
+}
+
+
+}
+@media (min-width:800px) and ( max-width:800px) {
+    #nav {
+        background-color: brown;
+    }
+}
