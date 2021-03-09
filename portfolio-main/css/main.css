@@ -146,6 +146,16 @@ h3 {
 }
 
 @media (max-width:800px) {
+    h1 {
+        font-size: 4.2em;
+    }
+    #summary {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        font-size: 1em;
+    }
     body {
         display: inline;
     }
@@ -188,7 +198,7 @@ h3 {
         display: block;
         position: relative;
         width: 50px;
-        height: 4px;
+        height: 2px;
         background-color: black;
         margin-top: 7px;
         transition: opacity .25s, transform .5s;
@@ -211,10 +221,27 @@ h3 {
     .hamburger_check:not(:checked)~.lines .line1 {
         background-color: yellow;
     }
-}
-
-.mobileNone {
-    display: none;
+    /*Work Detail*/
+    .jobTitle {
+        font-weight: bold;
+    }
+    ul {
+        width: 80%;
+        margin-left: 50px;
+    }
+    li {
+        list-style-type: disc;
+    }
+    .detail {
+        margin-top: 15px;
+        position: absolute;
+    }
+    .display_none {
+        display: none;
+    }
+    .display {
+        display: block;
+    }
 }
 
 .main_size {

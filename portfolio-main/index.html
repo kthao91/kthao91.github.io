@@ -40,7 +40,7 @@
         <div id="main" class="main_color main_size">
             <div class="center">
                 <div>
-                    <div class="circleHolder mobileNone">
+                    <div class="circleHolder display_none">
                         <img src="/asset/port.jpg">
                     </div>
                     <h1 class="main_align">Koua Thao</h1>
@@ -79,50 +79,54 @@
             <div class="section_title">
                 <h2>Work Experience</h2>
             </div>
-            <ul>
-                <li><button>Boston Scientific</button>
-                    <div class="detail">
+            <button onClick="buttonAction('boston')">Boston Scientific</button>
+            <button onClick="buttonAction('corelogic')">CoreLogic</button>
+            <button onClick="buttonAction('rels')">RELS</button>
+            <br>
 
-                        <span class="title">Sales VBar</span>
-                        <span class="time">2019 – Present</span>
-                        <ul>
-                            <li>Routinely exceed monthly goal of 80% first call close rate and over 90% customer service rating.
-                            </li>
-                            <li>Create documentation to assist end-users, colleagues, and management to troubleshoot common or uncommon issues.</li>
-                            <li>Provide technical support for the sales team: diagnose, troubleshoot, and resolve hardware, software, network incidents. Escalate the issue to the correct team if necessary.</li>
-                            <li>Listen attentively and ensure that end-users have a positive experience.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li><button>CoreLogic</button>
-                    <div class="detail">
-                        <span class="title">Desktop Support</span>
-                        <span class="time">2017 – 2019</span>
-                        <ul>
-                            <li>Routinely exceed monthly goal of 80% first call close rate and over 90% customer service rating.
-                            </li>
-                            <li>Create documentation to assist end-users, colleagues, and management to troubleshoot common or uncommon issues.</li>
-                            <li>Provide technical support for the sales team: diagnose, troubleshoot, and resolve hardware, software, network incidents. Escalate the issue to the correct team if necessary.</li>
-                            <li>Listen attentively and ensure that end-users have a positive experience.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li><button>RELS</button>
-                    <div class="detail">
-                        <span class="title">Technical Support Specialist</span>
-                        <span class="time">2015 – 2017</span>
-                        <ul>
-                            <li>Provided deskside technical support to VIPs and over 300 on-site end-users.</li>
-                            <li>Managed inventory, disposal, recycling, and distribution for over 300 in house desktop, laptop, and mobile devices.</li>
-                            <li>Troubleshot local network issues. Escalated the issue if it requires the network team assistance.</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+            <div id="boston" class="detail display_none">
+
+                <span class="jobTitle">Sales VBar</span>
+                <span class="time">2019 – Present</span>
+                <ul>
+                    <li>Routinely exceed monthly goal of 80% first call close rate and over 90% customer service rating.
+                    </li>
+                    <li>Create documentation to assist end-users, colleagues, and management to troubleshoot common or uncommon issues.</li>
+                    <li>Provide technical support for the sales team: diagnose, troubleshoot, and resolve hardware, software, network incidents. Escalate the issue to the correct team if necessary.</li>
+                    <li>Listen attentively and ensure that end-users have a positive experience.</li>
+                </ul>
+            </div>
+
+
+            <div id="corelogic" class="detail display_none">
+                <span class="jobTitle">Desktop Support</span>
+                <span class="time">2017 – 2019</span>
+                <ul>
+                    <li>Routinely exceed monthly goal of 80% first call close rate and over 90% customer service rating.
+                    </li>
+                    <li>Create documentation to assist end-users, colleagues, and management to troubleshoot common or uncommon issues.</li>
+                    <li>Provide technical support for the sales team: diagnose, troubleshoot, and resolve hardware, software, network incidents. Escalate the issue to the correct team if necessary.</li>
+                    <li>Listen attentively and ensure that end-users have a positive experience.</li>
+                </ul>
+            </div>
+
+
+            <div id="rels" class="detail display_none">
+                <span class="jobTitle">Technical Support Specialist</span>
+                <span class="time">2015 – 2017</span>
+                <ul>
+                    <li>Provided deskside technical support to VIPs and over 300 on-site end-users.</li>
+                    <li>Managed inventory, disposal, recycling, and distribution for over 300 in house desktop, laptop, and mobile devices.</li>
+                    <li>Troubleshot local network issues. Escalated the issue if it requires the network team assistance.</li>
+                </ul>
+            </div>
+
+
         </div>
 
         <footer>
 
         </footer>
     </div>
+    <script src="js/button.js"></script>
 </body>
