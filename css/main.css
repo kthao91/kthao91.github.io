@@ -233,6 +233,7 @@ h3 {
         list-style-type: disc;
     }
     .detail {
+        margin-top: 15px;
         position: absolute;
     }
     .display_none {

@@ -3,7 +3,6 @@ function buttonAction(displayed) {
     for (var i = 0; i < detail.length; i++) {
         let className = detail[i].className.split(" ")[1];
         if (className != "display_none" && className == "display") {
-            console.log("true");
             detail[i].classList.remove("display");
             detail[i].classList.add("display_none");
         }
@@ -12,5 +11,5 @@ function buttonAction(displayed) {
     displayElement.classList.remove("display_none");
     displayElement.classList.add("display");
     displayElement = document.getElementById(displayed);
-    displayElement.scrollTop = displayElement.scrollHeight;
+    window.scrollTo(0, screen.height);
 }
