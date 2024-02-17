@@ -11,4 +11,79 @@ dont make alot of  class and id
 
 
 Bootstrap or custom
+COLOR:
+main:#D2B48Cf (tan)
+##8cd2b4(green)
+##b48cd2(purple)
+
+maybe
+#33dbff
+
+
 */
+
+
+/* Set the background color of body to tan */
+body {
+    background-color: tan;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive
+Mobile*/
+@media screen and (max-width: 600px) {
+
+
+
+    body {
+        background-color: #d2b48c;
+        max-width: 600px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+
+    }
+    .main_align{
+        text-align: center;
+    }
+    
+    #nav {
+       
+        display:inline-block;
+        text-align: left;
+        width:400px;
+    }
+
+    #links li{
+
+        display:inline-block;
+        list-style-type: none;
+        margin-right:25px;
+
+
+    }
+
+    #socialmedia img{
+        width: 32px;
+    }
+
+    #main {
+        background-color:orange;
+        height: 80%;
+    }
+
+    #projects img{
+        display:none;
+    }
+    #summary{
+        width: 580px;
+    }
+}
