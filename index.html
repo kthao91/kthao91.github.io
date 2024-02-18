@@ -2,6 +2,8 @@
 
 add a cool way of showing projects
 fix spacing between use and next project
+bug when opening kthao91.github.io project dont want to scroll.
+
 -->
 
 
@@ -22,40 +24,45 @@ fix spacing between use and next project
 </head>
 
 <body>
-
-    <div id="nav">
-
-        <ul id="links">
-            <li><a href="#main">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#github">Github</a></li>
+    <!-- Navigation links (hidden by default for mobile) -->
+    <div class="container">
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-link"><a href="#main">Home</a></li>
+            <li class="nav-link"><a href="#projects">Projects</a></li>
+            <li class="nav-link"><a href="#github">Github</a></li>
             <li><a href="asset/Koua%20Thao%20Software%20Engineer%20Resume.pdf">CV/Resume</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
     </div>
-
     <div id="info">
 
         <div id="main" class="main_color main_size">
-  
-                <div class="center">
-                    <div class="circleHolder display_none">
-                        <img class="circular" src="asset/Head%20Shot.jpg">
-                    </div>
-                    <h1 class="name">Koua Thao</h1>
-                    <h3>Software Engineere</h3>
-                </div>
-                <br>
-                <div id="summary" >Demonstrated expertise in technical support and software engineering, with a robust focus on Java and Python technologies. Possess in-depth knowledge of C/C++, Java, Java Servlets, and Java Beans. Proven track record in problem-solving and adept at troubleshooting to identify and address the root causes of issues. Conducted personalized tutoring sessions with students, providing one-on-one guidance on solving various computer science problems. Known for a strong work ethic, strong integrity, thriving equally in collaborative team environments and individual settings.
-                </div>
-                <br>
-                <div id="socialmedia" class="main_align">
-                    <a href="https://github.com/kthao91">
-                        <img class="icon_size" src="./asset/Octocat/Octocat.png"></a>
-                    <a href="https://www.linkedin.com/in/koua-thao-359579101/">
-                        <img class="icon_size" src="asset/LinkedIn-Logos/LI-In-Bug.png"></a>
 
+            <div class="center">
+                <div class="circleHolder display_none">
+                    <img class="circular" src="asset/Head%20Shot.jpg">
                 </div>
+                <h1 class="name">Koua Thao</h1>
+                <h3>Software Engineere</h3>
             </div>
+            <br>
+            <div id="summary" >Demonstrated expertise in technical support and software engineering, with a robust focus on Java and Python technologies. Possess in-depth knowledge of C/C++, Java, Java Servlets, and Java Beans. Proven track record in problem-solving and adept at troubleshooting to identify and address the root causes of issues. Conducted personalized tutoring sessions with students, providing one-on-one guidance on solving various computer science problems. Known for a strong work ethic, strong integrity, thriving equally in collaborative team environments and individual settings.
+            </div>
+            <br>
+            <div id="socialmedia" class="main_align">
+                <a href="https://github.com/kthao91">
+                    <img class="icon_size" src="./asset/Octocat/Octocat.png"></a>
+                <a href="https://www.linkedin.com/in/koua-thao-359579101/">
+                    <img class="icon_size" src="asset/LinkedIn-Logos/LI-In-Bug.png"></a>
+
+            </div>
+        </div>
 
         <div id="projects">
             <div class="section_title">
@@ -86,5 +93,6 @@ fix spacing between use and next project
 
     </footer>
     </div>
-<script src="js/button.js"></script>
+<script src="js/main.js">
+</script>
 </body>

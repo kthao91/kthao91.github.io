@@ -9,7 +9,7 @@ add js
 dont make alot of  class and id
 
 COLOR:
-main:#D2B48Cf (tan)
+main:#D2B48C (tan)
 ##8cd2b4(green)
 ##b48cd2(purple)
 
@@ -23,14 +23,71 @@ maybe
 /* Set the background color of body to tan */
 *{
     font-family: "europa", sans-serif;
+    padding: 0;
+
 }
 
 
 body {
-    background-color: #D2B48Cf;    
+    background-color: #D2B48C;    
+}
+li{
+    list-style: none;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.container{
+  max-width: 1224px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.container{
+  max-width: 1224px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.nav-link{
+  transition: 0.3s ease-out;
+}
+
+.nav-link:hover{
+  color: dodgerblue;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
 
@@ -42,45 +99,51 @@ Mobile*/
 
 
 
-    body {
-        background-color: #D2B48Cf;  
-        max-width: 600px;
-        margin-right: 0;
-        margin-left: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        min-width:400px;
+    .hamburger{
+    display: block;
+  }
 
-    }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+   
+    flex-direction: column;
+    background-color: #b48cd2;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
 
-    #nav {
+  .nav-item{
+    margin: 16px 6px;
+  }
 
-        display:inline-block;
-        text-align: left;
-        width:400px;
-    }
-
-    #links li{
-
-        display:inline-block;
-        list-style-type: none;
-        margin-right:25px;
-
-
-    }
+  .nav-menu.active{
+    left: 0;
+  }
 
     h1{
 
         font-weight: 400;
         font-size: 2.5em;
     }
-    
+
     h3{
         font-weight: 100;
         font-size: 1.5em;
     }
-    
+
     #socialmedia{
         text-align: center;
     }
@@ -104,7 +167,7 @@ Mobile*/
         text-align: center;
         padding-top: 5%
     }
-    
+
     /*Maybe delete later to find better photo*/
     .circular{
         border-top-left-radius: 50% 50%; 
