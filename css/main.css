@@ -34,6 +34,29 @@ body {
 li{
     list-style: none;
 }
+h1{
+
+    font-weight: 400;
+    font-size: 2.5em;
+}
+h2{
+    font-weight: 200;
+    font-size: 2em;
+}
+
+
+h3{
+    font-weight: 100;
+    font-size: 1.5em;
+     margin-bottom: 0;
+}
+
+h5{
+    margin: 0;
+}
+p{
+    margin-bottom: 0;
+}
 .hamburger{
     cursor: pointer;
     display: none;
@@ -139,22 +162,13 @@ Mobile*/
     .nav-item a:visited{
         color: black;
     }
-    
+
 
     .nav-menu.active{
         left: 0;
     }
 
-    h1{
 
-        font-weight: 400;
-        font-size: 2.5em;
-    }
-
-    h3{
-        font-weight: 100;
-        font-size: 1.5em;
-    }
 
     #socialmedia{
         text-align: center;
@@ -187,6 +201,10 @@ Mobile*/
         border-bottom-left-radius: 50% 50%;
     }
 
+    #project{
+        margin: 0;
+        padding: 0;
+    }
 
     #projects img{
         display:none;
