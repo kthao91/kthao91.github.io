@@ -48,7 +48,7 @@ h2{
 h3{
     font-weight: 100;
     font-size: 1.5em;
-     margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 h5{
@@ -121,8 +121,8 @@ a:visited{
 }
 
 #socialmedia img{
-        width: 62px;
-    }
+    width: 62px;
+}
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
 
