@@ -92,16 +92,16 @@ p{
 .nav-link{
     transition: 0.3s ease-out;
 }
-.nav-link a{
+a{
     color: white;
 }
 
 
-.nav-link a:hover{
+a:hover{
     color: #8cd2b4;
 }
 
-.nav-link a:visited{
+a:visited{
     color: #b48cd2;
 }
 
@@ -119,6 +119,10 @@ p{
     transition: all 0.3s ease;
     background-color: white;
 }
+
+#socialmedia img{
+        width: 62px;
+    }
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
 
