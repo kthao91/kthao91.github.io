@@ -120,9 +120,27 @@ a:visited{
     background-color: white;
 }
 
+
+
 #socialmedia img{
     width: 62px;
 }
+
+
+
+#all-projects{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin: auto;
+
+}
+.projectItem{
+    text-align: center;
+}
+
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
 
@@ -205,12 +223,12 @@ Mobile*/
         border-bottom-left-radius: 50% 50%;
     }
 
-    #project{
+    #all-projects{
         margin: 0;
         padding: 0;
     }
 
-    #projects img{
+    #all-projects img{
         display:none;
     }
 }
