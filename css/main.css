@@ -2,12 +2,6 @@
 
 TODO.
 
-Figure out desktop vs mobile
-Class vs ID
-animation - keyframe vs js
-add js
-dont make alot of  class and id
-
 COLOR:
 main:#D2B48C (tan)
 ##8cd2b4(green)
@@ -16,34 +10,36 @@ main:#D2B48C (tan)
 maybe
 #33dbff
 
-
 */
-
-
 /* Set the background color of body to tan */
 *{
     font-family: "europa", sans-serif;
-    padding: 0;
 
 }
 
-
-body {
-    background-color: #D2B48C;    
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+    text-align: center;
+    background-color: #D2B48C;
 }
+
 li{
     list-style: none;
 }
+
 h1{
 
     font-weight: 400;
     font-size: 2.5em;
 }
+
 h2{
     font-weight: 200;
     font-size: 2em;
+    margin-bottom: 100px;
 }
-
 
 h3{
     font-weight: 100;
@@ -54,31 +50,33 @@ h3{
 h5{
     margin: 0;
 }
+
 p{
     margin-bottom: 0;
 }
+
 .hamburger{
     cursor: pointer;
     display: none;
 }
 
-.container{
-    max-width: 1224px;
-    width: 92%;
-    margin: 0 auto;
-}
-
-.container{
-    max-width: 1224px;
-    width: 92%;
-    margin: 0 auto;
-}
 
 .navbar{
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+.navbar ul{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.navbar li{
+    margin-left:20px;
+
 }
 
 
@@ -90,6 +88,7 @@ p{
 }
 
 .nav-link{
+    flex: 1 1 auto;
     transition: 0.3s ease-out;
 }
 a{
@@ -102,7 +101,7 @@ a:hover{
 }
 
 a:visited{
-    color: #b48cd2;
+    color: black;
 }
 
 .hamburger{
@@ -120,13 +119,26 @@ a:visited{
     background-color: white;
 }
 
+#front{
+    margin-bottom: 25%;
+}
+.main {
+    margin-top:20%;
+    height: 80%;
 
+}
+
+
+#summary{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
 #socialmedia img{
     width: 62px;
 }
-
-
 
 #all-projects{
     display: grid;
@@ -136,9 +148,37 @@ a:visited{
     margin: auto;
 
 }
+
+#all-projects img {
+    width: 300px;
+    height: 300px;
+}
+
 .projectItem{
     text-align: center;
 }
+
+#section-project h2{
+    margin-bottom: 100px;
+}
+
+.center .container{
+    display: inline-block;
+}
+.name{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 
 
 /* On screens that are 992px or less, set the background color to blue */
@@ -151,7 +191,9 @@ Mobile*/
 @media screen and (max-width: 600px) {
 
 
-
+    .container{
+        width:100%;
+    }
     .hamburger{
         display: block;
     }
@@ -181,6 +223,9 @@ Mobile*/
     .nav-item{
         margin: 16px, 0;
     }
+    .nav-item a{
+        color: white;
+    }
     .nav-item a:visited{
         color: black;
     }
@@ -191,17 +236,11 @@ Mobile*/
     }
 
 
-
     #socialmedia{
         text-align: center;
     }
     #socialmedia img{
         width: 62px;
-    }
-
-    #main {
-        height: 80%;
-
     }
 
     #summary{
@@ -212,7 +251,6 @@ Mobile*/
 
     .center{
         text-align: center;
-        padding-top: 5%
     }
 
     /*Maybe delete later to find better photo*/
