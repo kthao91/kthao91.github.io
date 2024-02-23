@@ -152,10 +152,12 @@ a:visited{
 #all-projects img {
     width: 300px;
     height: 300px;
+    box-shadow: 10px 10px 5px black;
 }
 
 .projectItem{
     text-align: center;
+    border: 1px solid
 }
 
 #section-project h2{
@@ -190,13 +192,6 @@ a:visited{
     }
 }
 
-
-
-
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-
-}
 
 /* On screens that are 600px or less, set the background color to olive
 Mobile*/
@@ -245,14 +240,6 @@ Mobile*/
 
     .nav-menu.active{
         left: 0;
-    }
-
-
-    #socialmedia{
-        text-align: center;
-    }
-    #socialmedia img{
-        width: 62px;
     }
 
     #summary{
