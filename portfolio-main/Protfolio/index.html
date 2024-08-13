@@ -1,0 +1,111 @@
+<!--
+
+----------------TODO------------------
+-: figure out click on project and it 
+    will slide to first project
+
+-: Finish each side;
+
+-: Add img of person in img
+
+-: research js forEach slide display none
+
+-: Add footer with soical media
+
+-: Add react sort files
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <header> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Koua Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+    </header>
+    <body>
+<!--need to fix this at left screen and right screen -->
+       <button onclick="nextSide(-1)">&#8592</button>
+       <button onclick="nextSide(+1)">&#8594</button>
+        
+           
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id=project href=#project>Projects</a>
+                </li>
+                <!--Put link of resume -->
+                <li>
+                    <a href= "files/Koua%20Thao%20Resume%202024.pdf">Resume</a>                
+                </li>
+            </ul>
+        </nav>
+
+
+<!--See if img is better-->
+        <div class="slide projects hero" id="0">
+            <h1 class="hero">Koua Thao Portfolio</h1>
+            <p>Professional and Helpful</p>
+        </div>
+        
+ <!--add img from project
+   7-19-2024
+    TODO:
+      Create a side for each project
+      Check on a href link to make sure it a link instead of across th
+       -->       
+        <div class="slide" >
+<!-- 1-->
+            <div class=projects id="1">
+            
+                <h3>  <a href="#">Lake Finder</a></h3>
+            <img src="">
+                <p>Designed and implemented an intuitive and visually appealing lake detection system, leveraging advanced geospatial technologies. This innovative solution enables efficient identification and location tracking of lakes, showcasing a strong commitment to cutting-edge technology and spatial visualization in environmental data analysis. </p>
+            </div>
+            
+<!-- 2-->
+            <div class=projects id="2">
+            <img src="">
+                <h3>  <a href="#">Hotel Booking Tool</a></h3>
+                <img src="">
+                <p>Proposed and executed an innovative 24/7 check-in/check-out enhancement system for hotel operations, optimizing customer experience. This streamlined solution empowers guests with flexibility, ensuring seamless transactions at any hour. Demonstrated a proactive approach to improving operational efficiency and customer satisfaction in the hospitality industry.</p>
+            </div>
+            
+<!-- 3-->
+            
+            <div class=projects id="3">
+                <h3> <a href="https://ethmediacreate.com/">ETH Media Create Website</a></h3>
+            <br>
+            <p>This website serves as a platform to showcase the diverse talents of ETH Media's team, effectively harnessing their skills for various purposes, including photo and video editing, as well as marketing initiatives. By providing comprehensive profiles, it facilitates informed hiring decisions, ensuring clients understand everyone’s strengths and expertise.</p>
+            </div>
+            
+<!-- 4-->
+            
+            <div class=projects id="4">
+                <h3> <a href="https://avatotoe.com/">Ava Totoe</a></h3>
+            <br>
+            <p>This website serves as a platform to showcase the diverse talents of ETH Media's team, effectively harnessing their skills for various purposes, including photo and video editing, as well as marketing initiatives. By providing comprehensive profiles, it facilitates informed hiring decisions, ensuring clients understand everyone’s strengths and expertise.</p>
+            </div>
+            
+<!-- 5-->
+            
+            <div class=projects id="5">
+               
+                <h3> <a href="https://maiatotoe.com/">Maia Totoe</a></h3>
+            <br>    
+            <p>The Portfolio of Ava Totoe highlights her accomplishments and aspirations, offering a detailed look at her journey and ambitions. It showcases her creative endeavors, from artistic projects to innovative pursuits, reflecting her unique talents and dedication. Additionally, it features her travel experiences and the insights gained from them, illustrating how these adventures have shaped her perspective and fueled her growth. This portfolio not only celebrates Ava’s achievements but also provides a glimpse into her dynamic and inspiring life.</p>
+            </div>
+            
+        </div>
+        
+        <script src="js/slider.js"></script>
+    </body>
+
+</html> 
