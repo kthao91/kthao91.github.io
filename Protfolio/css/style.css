@@ -99,12 +99,21 @@ Hero
 /************
 Projects
 ***********/
-
-
-.project{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top:40%;
-
+.projects{
+    
 }
+
+.projects ul{
+    width: 100%;
+    background-color: blue;
+    margin-left: 10%;
+}
+
+.projects li{
+    display: inline-block;
+    width: 25%;
+    background-color: brown;
+    border: 3px solid green;
+    overflow: hidden;
+}
+
