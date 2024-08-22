@@ -1,0 +1,208 @@
+<!--
+
+----------------TODO------------------
+-: figure out click on project and it 
+    will slide to first project
+    done
+
+-: Finish each side;
+done
+
+-: Add img of person in img
+
+-: research js forEach slide display none
+done
+
+-: Add footer with soical media
+
+-: Add react sort files
+no react
+
+-: JS going backward error something wrong with if 
+
+-: Do project page as many project instead of one
+-->
+
+
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koua Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</header>
+
+<body>
+    <!--need to fix this at left screen and right screen 
+    done-->
+    <button onclick="nextSide(-1)" id="left">&#8592</button>
+    <button onclick="nextSide(+1)" id="right">&#8594</button>
+
+
+    <nav>
+        <ul>
+                <a href="index.html">Home</a>
+            
+            
+                <a href=#project>Projects</a>
+            
+            
+                <a href=#project>Work History</a>
+            
+            <!--Put link of resume -->
+            
+                <a href="files/Koua%20Thao%20Resume%202024.pdf">Resume</a>
+            
+        </ul>
+    </nav>
+
+
+    <!--See if img is better-->
+    <div class="slide hero" id="0">
+        <h1>Koua Thao Portfolio</h1>
+        <p>Professional and Helpful</p>
+    </div>
+
+    <!--add img from project
+   7-19-2024
+    TODO:
+      Create a side for each project
+      Check on a href link to make sure it a link instead of across th
+       -->
+      <!--
+    <div class="slide projects">
+        <h2>Project</h2>-->
+        <!-- 1
+
+                <div class="project">
+
+                    <h3> <a href="#">Lake Finder</a></h3>
+                    <img src="">
+                    <p>Developed an intuitive lake detection system using advanced geospatial technologies, enabling efficient lake identification and location tracking in environmental data analysis.</p>
+                </div>
+-->
+            <!-- 2
+
+                <div class="project">
+
+                    <h3> <a href="#">Hotel Booking Tool</a></h3>
+                    <img src="">
+                    <p>Implemented an innovative 24/7 hotel check-in/check-out system, enhancing operational efficiency and guest satisfaction.</p>
+                </div>
+  -->          
+            <!-- 3
+            
+                <div class="project">
+                    <h3> <a href="https://ethmediacreate.com/">ETH Media Create Website</a></h3>
+                    <br>
+                    <p>This website showcases ETH Media's team talents in photo and video editing, and marketing. It features detailed profiles to help clients make informed hiring decisions by highlighting each team member's strengths and expertise.</p>
+                </div>
+-->            
+            <!-- 4
+            
+                <div class="project">
+                    <h3> <a href="https://avatotoe.com/">Ava Totoe</a></h3>
+                    <br>
+                    <p>Ava Totoe's portfolio highlights her creative journey, showcasing her artistic projects, innovative pursuits, and travel experiences. It reflects her unique talents, growth, and the insights gained along the way, offering a glimpse into her dynamic and inspiring life.</p>
+                </div>
+ -->           
+
+            <!-- 5
+            
+                <div class="project">
+
+                    <h3> <a href="https://maiatotoe.com/">Maia Totoe</a></h3>
+                    <br>
+                    <p>Maia Totoe's portfolio highlights her creative journey, showcasing her artistic projects, innovative pursuits, and travel experiences. It reflects her unique talents, growth, and the insights gained along the way, offering a glimpse into her dynamic and inspiring life.</p>
+                </div>
+            
+
+        </ul>
+    </div>
+-->
+
+<div class="container slide">
+    <div class="panel active" style="background-image: url('img/eth.JPG')">
+        <h3> <a href="https://ethmediacreate.com/">ETH Media Create Website</a></h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+      <h3>Wild Forest</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80')">
+      <h3>Sunny Beach</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80')">
+      <h3>City on Winter</h3>
+    </div>
+    <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
+      <h3>Mountains - Clouds</h3>
+      <p>
+        test
+      </p>
+    </div>
+
+  </div>
+
+    <!--Work History-->
+
+    <div class="slide">
+
+        <h2>Work Experience</h2>
+        <div>
+            End Time Harvest Entertainment Studios
+            Web Developer Internship 2024- Present
+            • Architecting elegant user interfaces with HTML, CSS, and JavaScript to optimize usability and engagement.
+            • Harnessing cutting-edge front-end frameworks like React, Angular, or Vue.js to construct dynamic and
+            immersive web applications.
+            • Seamlessly blending front-end and back-end technologies to deliver fully functional and cohesive web
+            solutions.
+            • Utilizing Node.js, Python, Ruby, or PHP to architect scalable and efficient server-side solutions.
+            • Executing rigorous testing procedures to uncover and rectify defects and optimize performance in web
+            applications.
+            • Collaborating with cross-functional teams to create documentation that aligns with project requirements
+            and objectives.
+        </div>
+        <div>
+            IDC Technologies - Boston Scientific, Arden Hills, MN
+            Technical Support Engineer 2021-2023
+            • Reconfigured and optimized network architecture, resulting in a 40% decrease in latency and a 20% increase
+            in network speed.
+            • Document or configure solution either in ticket queue or/and knowledge article and share with team about
+            solution.
+            • Engineer, manage, and test software to automate tickets in queue to decrease SLA time by 50%
+            • Mange, and order laptop/desktop whenever necessary.
+        </div>
+        <div>
+            Signature Consultants – Boston Scientific, Arden Hills, MN
+            Sales Support VBar, 2019 – 2021
+            • Routinely exceed monthly goal of 90% first call close rate and over 90% customer service rating.
+            • Create documentation to assist end-users, colleagues, and management to troubleshoot common or uncommon
+            issues.
+            • Provide technical support for the sales team: diagnose, troubleshoot, and resolve hardware, software,
+            network incidents. Escalate the issue to the correct team if necessary.
+            • Listen attentively and ensure that end-users have a positive experience.
+        </div>
+        <div>
+            CoreLogic, Bloomington, MN
+            Desktop Support, 2017 – 2019
+            • Design, manage, and engineer software to automate ticket queues to drop customer wait time by more than
+            80%.
+            • Test software to see if it is suitable for the end users and the business analytics.
+            • Manufacture, and mange server used for restoring computer to current operating system and used to refresh
+            300+ computers.
+            • Provided deskside technical support to VIPs and over 300 on-site end-users.
+            • Managed inventory, disposal, recycling, and distribution for over 300 in house desktop, laptop, and mobile
+            devices.
+            • Troubleshot local network issues. Escalated the issue if it requires the network team assistance.
+            • Mange, and order laptop/desktop whenever necessary.
+        </div>
+
+    </div>
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
