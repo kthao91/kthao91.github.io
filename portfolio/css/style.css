@@ -130,7 +130,7 @@ Projects
   }
   
   .panel h3 a:visited{
-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
   }
   .panel.active {
     flex: 5;
@@ -151,3 +151,10 @@ color: rgb(255, 255, 255);
       display: none;
     }
   }
+
+/*******************
+Work History
+*******************/
+.exp{
+  
+}
