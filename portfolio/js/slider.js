@@ -1,27 +1,27 @@
+
+/*
+Javascript to hide all the side in the side show
+*/
 var showSide = 0;
 showSides(showSide);
-
-
 var s = document.getElementsByClassName("slide");
-console.log(s.length +" not suppose to b e 0" );
 
+
+//hide all side execpt the first one
 for(i = 0; i<s.length; i++){
-    console.log(i);
     if(i!=0){
         s[i].style.display = "none";
-    }
-    
-    
+    }   
 }
 
 function nextSide(n) {
-    
     showSides(showSide += n);
   }
 
 function showSides(n){
-    var i;
-    var x = document.getElementsByClassName("slide");
+    let i;
+    let x = document.getElementsByClassName("slide");
+    let p = document.getElementsByClassName("panel");
     if(n<=0){
         n=x.length;
         showSide=x.length;
@@ -34,15 +34,22 @@ function showSides(n){
 
     for(i = 0; i<x.length; i++){
         x[i].style.display = "none";
+
         if(n == 1){
-            x[n].style.display = "flex";
+            x[1].removeAttribute("style");
+
         } 
         else if(n==i){
             x[n].style.display = "block";
-        } 
-    }
+        }
 
-     
+        
+
+}
+}
+
+function getSide(n){
+    showSides(n);
 }
 
 
