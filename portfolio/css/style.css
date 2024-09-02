@@ -163,10 +163,20 @@ Work History
  
 }
 
-.exp h2{}
+.exp h2{
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
 
 }
+
+.exp h3 {
+  font-weight:200;
+  font-size: 1.25em;
+}
+
 .job{
   margin-top: 50px;
+  margin-left: 50px;
   background-color: orange;
 }
