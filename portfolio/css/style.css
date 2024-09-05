@@ -36,21 +36,29 @@ html, body {
 	-webkit-font-smoothing: subpixel-antialiased;
     font: 1.2rem "Fira Sans", sans-serif;
 }
-
+h2{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
 /***
 Nav Bar
 ***/
 nav{
+    position: relative;
     width: 100%;
-    height: 10%;
+    top: 10px;
+    height: 20%;
     display: inline;
+    z-index: auto;
 
 }
 
 nav ul{
     text-align: center;
     font-size:25px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 nav ul li{
@@ -98,11 +106,17 @@ Hero
 /************
 Projects
 ***********/
-
+.title{
+  width: 100%;
+  margin-top: 25px;
+}
 .container {
+  margin-top: 70px;
   display: flex;
   width: 90vw;
   margin-left: 20px;
+  position: absolute;
+  top: 15px;
 }
 
 .panel {
@@ -111,10 +125,11 @@ Projects
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: #000;
+  color: #0ddbf7;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
+  margin-top: 75px;
   position: relative;
   -webkit-transition: all 700ms ease-in;
 
@@ -131,7 +146,7 @@ Projects
 }
 
 .panel h3 a:visited{
-  color: rgb(255, 255, 255);
+  color: rgb(98, 0, 255);
 }
 .panel.active {
   flex: 5;
@@ -158,25 +173,32 @@ Projects
 /*******************
 Work History
 *******************/
-.exp{
-  background-color: blue;
- 
+
+.subNav{
+  margin-top: 35px;
+  width: 100%;
+  text-align: center;
 }
 
-.exp h2{
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-
+.subNav button{
+  height: 100px;
+  width: 300px;
+  font-size: larger;
+  
+}
+.exp{
+  margin-top: 50px;
 }
 
 .exp h3 {
+  margin-top: 50px;
   font-weight:200;
   font-size: 1.25em;
+  text-decoration: underline;
 }
 
 .job{
   margin-top: 50px;
   margin-left: 50px;
-  background-color: orange;
+  width: 75%;
 }
