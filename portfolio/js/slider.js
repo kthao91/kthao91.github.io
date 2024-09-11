@@ -34,9 +34,11 @@ function showSides(n){
 
     for(i = 0; i<x.length; i++){
         x[i].style.display = "none";
+        x[i].classList.remove("anime");
 
         if(n == 1){
             x[1].removeAttribute("style");
+            x[1].classList.add("anime")
 
         } 
         else if(n==i){
