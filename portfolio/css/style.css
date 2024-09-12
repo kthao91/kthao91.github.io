@@ -132,7 +132,11 @@ Projects
   margin-left: 20px;
   position: absolute;
   top: 15px;
+  animation-name: hidetoshow;
+  animation-duration: 1s;
+
 }
+
 
 .panel {
   background-size: cover;
@@ -147,11 +151,10 @@ Projects
   margin-top: 75px;
   position: relative;
   
-}
-.panel .anime{
-  -webkit-transition: all 700ms ease-in;
 
+  
 }
+
 .panel h3 {
   font-size: 35px;
   font-weight: 100;
