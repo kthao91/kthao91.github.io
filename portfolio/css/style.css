@@ -8,6 +8,7 @@ html, body,span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  color: #0d3b66;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
 	display: block;
@@ -36,6 +37,10 @@ html, body {
 	-webkit-font-smoothing: subpixel-antialiased;
     font: 1.2rem "Fira Sans", sans-serif;
 }
+
+h1{
+  font-weight: bold;
+}
 h2{
   margin-top: 20px;
   font-weight: bold;
@@ -46,10 +51,10 @@ h2{
   0%{
       opacity: 0%;
   }
-  50{
+  50%{
       opacity: 50%;
   }
-  100{
+  100%{
       opacity: 100%;
   }
   
@@ -110,9 +115,13 @@ Hero
     transform: translateX(-50%);
     animation-name: hidetoshow;
     animation-duration: 3s;
-}
 
+}
+.hero p {
+  color:#f5e08f;
+}
 .hero h1{
+    
     font-size: 5em
 }
 
@@ -144,7 +153,7 @@ Projects
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: #0ddbf7;
+  color: #8fa4f5;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
@@ -218,4 +227,9 @@ Work History
   margin-top: 50px;
   margin-left: 50px;
   width: 75%;
+}
+
+.workEdu.active{
+  animation-name: hidetoshow;
+  animation-duration: 4s;
 }
