@@ -1,37 +1,20 @@
 <!--
 
-HEX
 
+
+HEX
+yellow
 #f5e08f
 
-RGB
-
-245, 224, 143
-
-CMYK
-
-0, 9, 42, 4
-
-
-
 HEX
-
+blue
 #8fa4f5
 
-RGB
-
-143, 164, 245
-
-CMYK
-
-42, 33, 0, 4
+HEX
+grey
 
 
 ----------------TODO------------------
-
--: Add img of person in img
-
--: JS going backward error something wrong with if 
 
 -->
 
@@ -71,7 +54,7 @@ CMYK
 
             <!--Put link of resume -->
 
-            <li><a href="files/Koua%20Thao%20Resume%202024.pdf">Resume</a></li>
+            <li><a href="/portfolio/files/Koua%20Thao%20Resume%202024.pdf">Resume</a></li>
 
         </ul>
     </div>
@@ -89,16 +72,16 @@ CMYK
         <h2>Projects</h2>
         <div class="container ">
             <br>
-            <div class="panel active" style="background-image: url('img/eth.JPG')">
+            <div class="panel active" style="background-image: url('/portfolio/img/eth.JPG')">
                 <h3> <a href="https://ethmediacreate.com/">ETH Media Create Website</a></h3>
             </div>
-            <div class="panel" style="background-image: url('img/lakefinder.JPG')">
+            <div class="panel" style="background-image: url('/portfolio/img/lakefinder.JPG')">
                 <h3><a href="https://kthao91.github.io/LakeFinder/">Lake Finder</a></h3>
             </div>
-            <div class="panel" style="background-image: url('img/ava.jpg')">
+            <div class="panel" style="background-image: url('/portfolio/img/ava.jpg')">
                 <h3><a href="https://avatotoe.com/">Ava Totoe</a>
             </div>
-            <div class="panel" style="background-image: url('img/maia.jpg')">
+            <div class="panel" style="background-image: url('/portfolio/img/maia.jpg')">
                 <h3><a href="https://maiatotoe.com/">Maia Totoe</a>
             </div>
 
@@ -109,11 +92,13 @@ CMYK
     <div id="experience" class="slide">
         <div class="exp">
             <h2>Experience</h2>
-            <div class="subNav">
-                <button onclick="hide('edu')">Work History</button>
-                <button onclick="hide('work')">Education</button>
-            </div>
-            <div class="workEdu">
+            <div class="ani">
+                <div class="subNav">
+                    <button onclick="hide('edu')">Work History</button>
+                    <button onclick="hide('work')">Education</button>
+                </div>
+            
+                <div class="workEdu">
                 <h2>Work History</h2>
                 <div class=" job">
                     <h3>End Time Harvest Entertainment Studios </h3>
@@ -195,9 +180,9 @@ CMYK
                     <br>
                     • Mange, and order laptop/desktop whenever necessary.
                 </div>
-            </div>
+                </div>
 
-            <div class="workEdu">
+                <div class="workEdu">
                 <div class="edu">
                     <h2>Education</h2>
                     <div class="job">
@@ -214,6 +199,7 @@ CMYK
                         <h3>HarvardX</h3>
                         Certificate: CS50, 2024
                     </div>
+                </div>
                 </div>
             </div>
         </div>

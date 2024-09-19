@@ -42,7 +42,7 @@ h1{
   font-weight: bold;
 }
 h2{
-
+  margin-top: 50px;
   font-weight: bold;
   font-size: 2em;
   text-align: center;
@@ -51,9 +51,7 @@ h2{
   0%{
       opacity: 0%;
   }
-  50%{
-      opacity: 50%;
-  }
+
   100%{
       opacity: 100%;
   }
@@ -64,13 +62,11 @@ h2{
   0%{
     top: 0;
   }
-  25%{
-  }
-  50%{
+  33%{
     top: 75%;
     opacity: .50;
   }
-  75%{
+  66%{
     opacity: .75;
   }
   100%{
@@ -83,14 +79,15 @@ h2{
 Nav Bar
 ***/
 .nav{
-    position: absolute;
+    position: fixed;
     display: inline;
     width: 100%;
     height: 40px;
     display: inline;
     font-size: 20px;
     background-color: #f5e08f;
-    top:0
+    top:0;
+    border-radius: 5px;
 }
 
 .nav ul{
@@ -153,7 +150,9 @@ Hero
     transform: translateX(-50%);
     animation-name: hidetoshow;
     animation-duration: 3s;
-
+    border-radius: 20px;
+    background-color:white;
+    box-shadow: 15px 5px 20px #c2c2c2;
 }
 .hero p {
   color:#f5e08f;
@@ -247,6 +246,7 @@ Work History
   margin-top: 35px;
   width: 100%;
   text-align: center;
+  
 }
 
 .subNav button{
@@ -268,11 +268,15 @@ Work History
 
 .job{
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 75px;
   width: 75%;
 }
 
 .workEdu.active{
   animation-name: hidetoshow;
   animation-duration: 4s;
+}
+.ani{
+  animation-name:hidetoshow;
+  animation-duration: 1s;
 }
