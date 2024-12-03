@@ -180,7 +180,8 @@ Projects
   top: 15px;
   animation-name: hidetoshow;
   animation-duration: 1s;
-
+  animation-name: hidetoshow;
+  animation-duration: 3s;
 }
 
 
