@@ -80,11 +80,18 @@ canvas{
 }
 .hero{
 	position: absolute;
-	top:50%;
+	transform: translateY(300px);
+	transition: transform 2s ease, opacity 2s ease;
+	top:0%;
 	left:50%;
-	right:50%;
+	right:calc(50%+20px);
 	color:white;
 	width:10%;
+	
+}
+
+.hero h1{
+	
 }
 
 #matrix{
