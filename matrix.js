@@ -6,7 +6,9 @@ const frist = "Koua Thao";
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+~`|}{[]\:;?><,./-=';
+const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*'+
+'()_+~`|}{[]\:;?><,./-=あかがさざただなはばぱまやらわいきぎしじちぢにひびぴみりをうくぐすずつづぬふぶぷむゆるんえけ'+
+'げせぜてでねへべぺめれおこごそぞとどのほぼぽもよろ';
 const fontSize = 10;
 const columns = canvas.width / fontSize;
 
@@ -26,6 +28,7 @@ function draw() {
   for (let i = 0; i < drops.length; i++) {
     const text = chars.charAt(Math.floor(Math.random() * chars.length));
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+    
 
     if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
       drops[i] = 0; // Reset the drop to the top
