@@ -86,9 +86,28 @@ canvas{
 	left:50%;
 	right:calc(50%+20px);
 	color:white;
-	width:10%;
-	
+	width:10%;	
 }
+
+.animated-text {
+	display: inline-block;
+  }
+  
+  .animated-text span {
+	display: inline-block;
+	animation: move-char 1s forwards;
+  }
+  
+  @keyframes move-char {
+	0% { 
+	  transform: translateY(-100%); 
+	  opacity: 0;
+	}
+	100% { 
+	  transform: translateY(0); 
+	  opacity: 1;
+	}
+  }
 
 .hero h1{
 	
