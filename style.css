@@ -78,6 +78,16 @@ nav a{
 canvas{
 	z-index: -1;
 }
+
+/*
+Main section
+Want:
+to make name drop down like the matrix and stop and start writing my name
+type position under my name
+
+
+
+*/
 .hero{
 	position: absolute;
 	transform: translateY(300px);
@@ -87,21 +97,14 @@ canvas{
 	right:calc(50%+20px);
 	color:white;
 	width:10%;	
+	opacity: 1;
+	
 }
-
-.animated-text {
-	display: inline-block;
-  }
-  
-  .animated-text span {
-	display: inline-block;
-	animation: move-char 1s forwards;
-  }
-  
+ 
   @keyframes move-char {
 	0% { 
 	  transform: translateY(-100%); 
-	  opacity: 0;
+	  
 	}
 	100% { 
 	  transform: translateY(0); 
@@ -109,12 +112,14 @@ canvas{
 	}
   }
 
-.hero h1{
-	
-}
 
 #matrix{
     width: 100%;
     height: 95vh;
+}
 
+.bsod{
+	background-position: center top;
+	background-image: url("img/BSOD2.png");
+	
 }
