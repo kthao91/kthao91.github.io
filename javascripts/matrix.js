@@ -94,17 +94,47 @@ function reset() {
 }
 
 function reboot(){
-  console.log("here")
-  ctx.fillStyle = 'black';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  function draw(){
-    
+  function draw(){ 
+    ctx.fillStyle = '#000';
+    console.log("reboot");
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
   }
   draw();
+}
+
+function seeName(){
+  let name = document.getElementsByClassName("nothing");
+  console.log(name);
+  name[0].classList.toggle("show");
 
 }
+
+function type(){
+  let typed = new Typed('#name', {
+    strings: ['Koua Thao'],
+    typeSpeed: 50,
+    showCursor: false,
+
+    });
+
+  let type2 = new Typed('#title',{
+    startDelay: 1000,
+    strings:['sort of Hacker','Software Engineer', 'Web Master',
+      'Pixel Artist', 'Game Designer', 'Graphic Designer', 'Full Stack Devloper'
+    ],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true,
+
+  }
+
+  )
+}
+
 startInterval();
 setTimeout(pauseInterval, 15000);
 setTimeout(filled,17000);
 setTimeout(reset,18000);
-setTimeout(reboot,21000);
+setTimeout(reboot,22000);
+setTimeout(seeName,23000);
+setTimeout(type,24000);
