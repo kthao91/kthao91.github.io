@@ -24,30 +24,35 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 
 nav{
     position: absolute;
@@ -63,6 +68,7 @@ nav ul{
 	margin-top: 20px;
 	font: 20px;
 }
+
 nav li{
 
 	list-style: circle;
@@ -75,9 +81,11 @@ nav li{
 nav a{
 	color: #0F0;
 }
+
 canvas{
 	z-index: -1;
 }
+
 .hero{
 	position: absolute;
 	top:50%;
@@ -90,5 +98,11 @@ canvas{
 #matrix{
     width: 100%;
     height: 95vh;
-
 }
+
+.cycle{
+	display:none;
+}
+
+
+
