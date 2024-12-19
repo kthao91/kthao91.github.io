@@ -111,7 +111,7 @@ function seeName(){
 
 function type(){
   let typed = new Typed('#name', {
-    strings: ['Koua Thao'],
+    strings: ['Koua Thao <br>',],
     typeSpeed: 50,
     showCursor: false,
 
@@ -119,9 +119,9 @@ function type(){
 
   let type2 = new Typed('#title',{
     startDelay: 1000,
-    strings:['sort of Hacker','Software Engineer', 'Web Master',
-      'Pixel Artist', 'Game Designer', 'Graphic Designer', 'Full Stack Devloper'
-    ],
+    strings:['I am a sort of Hacker','I am a Software Engineer', 'I am a Web Master',
+      'I am a Pixel Artist', 'I am a Game Designer', 'I am a Graphic Designer', 'I am a Full Stack Devloper',
+    'I am Tech Support', 'I am Here to help'],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true,
